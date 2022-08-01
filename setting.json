@@ -1,0 +1,104 @@
+{
+	// // ------------------- Javaの設定 ------------------
+	// "git.autofetch": true,
+	// //"java.home: null
+	// "java.home": "C:\\Program Files\\Java\\jdk1.8.0_161",
+	// -------------------------------------------------
+	"cSpell.userWords": [
+		// CodeSpellCheckerでエスケープする言葉
+		"app",
+		"datas"
+	],
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true, // セーブ時に整形する
+		"source.organizeImports": true // セーブ時に不要なimportを削除する
+	},
+	"workbench.colorCustomizations": {
+		// カラーリングの制御
+		"tab.activeBackground": "#000000",
+		"tab.activeForeground": "#ffffff",
+		"tab.inactiveForeground": "#ffffff"
+	},
+	"editor.renderWhitespace": "all", // 空白文字の可視化
+	"files.autoGuessEncoding": true, // Shift_JISファイルが文字化けするのでエスケープする
+	"json.maxItemsComputed": 100000000, // JSONツリーを大きなファイルでも折り畳めるように設定
+	"git.suggestSmartCommit": false, // 差分エディタで空白文字の制御
+	"editor.suggestSelection": "first", // サジェストで一番直近に使ったものを表示
+	"files.autoSave": "afterDelay", // 非同期セーブの設定
+	"editor.fontLigatures": "NOTO", // フォントの合字機能を利用するかどうか (->が→に自動的になる)
+	"editor.defaultFormatter": "esbenp.prettier-vscode", // デフォルトのフォーマッたを設定
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode" // JSでデフォルトのフォーマッタを設定
+	},
+	"editor.formatOnPaste": true, // ペーストした時に自動でフォーマット
+	"editor.formatOnType": true, // タイピングした時に自動でフォーマット
+	"git.autofetch": true, // 自動でフェッチするかどうか
+	"javascript.updateImportsOnFileMove.enabled": "always", // 常にインポートの自動更新を試みる
+	"gitlens.hovers.currentLine.over": "line", // テーマの設定
+	"workbench.preferredHighContrastColorTheme": "GitHub Dark", // ハイコントラスト設定時のテーマ
+	"workbench.preferredLightColorTheme": "GitHub Light", // ライト設定時のテーマ
+	"editor.minimap.showSlider": "always", // ミニマップを常に表示する
+	"editor.minimap.maxColumn": 500, // ミニマップの長さを500pxまでにする
+	"workbench.tree.indent": 25, // ディレクトリのインデントを25pxにする
+	"scm.inputFontSize": 15, // ソース管理ツールscmのフォントサイズ
+	"scm.inputFontFamily": "\"Ricty Diminished\"", // ソース管理ツールscmのフォントファミリー
+	"editor.fontFamily": "\"Ricty Diminished\"", // エディタのフォントファミリー
+	"editor.fontSize": 14.5, // エディタのフォントサイズ
+	"editor.codeLensFontFamily": "\"Ricty Diminished\"", // フォントサイズの設定
+	"terminal.integrated.fontFamily": " \"menlo\", \"Ricty Diminished\"", // ターミナルのフォントファミリー
+	"terminal.integrated.fontSize": 14,
+	"editor.inlayHints.fontFamily": "\"Ricty Diminished\"",
+	"debug.console.fontFamily": "\"Ricty Diminished\"",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"redhat.telemetry.enabled": true,
+	"prettier.useTabs": true, // ターミナルのフォントサイズ
+	"liveSassCompile.settings.formats": [
+		//Sassの出力内容の設定
+		{
+			"format": "expanded", //nested、compact、compressedのどれかを選ぶ
+			"extensionName": ".css", //style.cssとして出力
+			"savePath": "/css" //cssフォルダの中にstyle.cssを出力
+		}
+	],
+	"liveSassCompile.settings.excludeList": [
+		//対象外とするフォルダを指定
+		"**/node_modules/**",
+		".vscode/**",
+		".history/**"
+	],
+	"liveSassCompile.settings.autoprefix": [
+		//ベンダープレフィックスの指定
+		"last 2 versions",
+		"ie >= 11",
+		"Android >= 4",
+		"ios_saf >= 8"
+	],
+	// ------------------------------------------------ HTMLの整形フォーマット ------------------------------------------------
+	"html.format.contentUnformatted": "pre,code,textarea", // コンテンツを再フォーマットしてはならないタグをコンマで区切ってリストにします。'null' は、既定値の'pre' タグを表します。
+	"html.format.enable": true, // 既定のHTMLフォーマッタを有効/無効にします
+	"html.format.endWithNewline": false, // 末尾に改行を入れます。
+	"html.format.extraLiners": "head, body, /html", // 直前に改行を1つ入れるタグの、コンマで区切られたリストです。'null'は、既定値の"head, body, /html" を表します。
+	"html.format.indentHandlebars": false, // 書式設定とインデント{{#foo}}および{{/foo}}
+	"html.format.indentInnerHtml": false, // <head>セクションと<body>セクションをインデントします。
+	"html.format.maxPreserveNewLines": null, // 1つのチャンク内に保持できる改行の最大数。無制限にするには、'null'を使います。
+	"html.format.preserveNewLines": true, // 要素の前にある既存の改行を保持するかどうか。要素の前でのみ機能し、タグの内側やテキストに対しては機能しません。
+	"html.format.unformatted": "wbr", // 再フォーマットしてはならないタグの、コンマ区切りの一覧。'null'の場合、既定で https://www.w3.org/TR/html5/dom.html#phrasing-content にリストされているすべてのタグになります。
+	"html.format.wrapAttributes": "auto", // 属性を折り返します。
+	"html.format.wrapLineLength": 120,
+	// "[php]": {
+	// 	"editor.defaultFormatter": "Sophisticode.php-formatter"
+	// },
+	"editor.formatOnSave": true,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"workbench.colorTheme": "Dracula Soft",
+	"git.confirmSync": false,
+	"liveSassCompile.settings.includeItems": [],
+	"editor.inlineSuggest.enabled": true,
+	"editor.bracketPairColorization.enabled": true,
+	"editor.guides.bracketPairs": true,
+	"cSpell.languageSettings": [
+	
+	
+	] // 1行あたりの最大文字数 (0=無効にする)。
+	// -------------------------------------------------------------------------------------------------------------------------
+}
